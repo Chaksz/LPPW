@@ -36,6 +36,10 @@ kill @e[type=area_effect_cloud, tag=chunk_aligned]
 
 # 7. KEMBALI KE HUB OVERWORLD
 function practice:hub_teleport
+gamemode creative @a
+schedule function practice:stop_restore_gamemode 2t replace
+effect give @a minecraft:instant_health 1 4 true
+effect give @a minecraft:saturation 1 255 true
 
 # 8. Set status run menjadi berhenti (0) -> tick_gate otomatis berhenti polling
 scoreboard players set running practice.temp 0
