@@ -33,12 +33,12 @@ scoreboard players set waiting_for_movement practice.temp 0
 execute unless score scenario practice.temp = scenario practice.temp run scoreboard players set scenario practice.temp 0
 
 # Konstanta pembantu matematika
-scoreboard players set neg_one practice.temp -1
 scoreboard players set twelve practice.temp 12
 scoreboard players set #5 practice.temp 5
 
-# Konstanta untuk random pool selector (jumlah total varian pool = 6)
-scoreboard players set #6_pools practice.temp 6
+# Konstanta untuk random pool selector (15 bentuk pool, 4 rotasi)
+scoreboard players set #15_pools practice.temp 15
+scoreboard players set #4_rotations practice.temp 4
 
 # Setup slot loadout
 execute unless score loadout_index practice.temp = loadout_index practice.temp run scoreboard players set loadout_index practice.temp 0

@@ -1,2 +1,3 @@
 # Skenario bawaan: lava pool pertama.
-function lavabuilder:lava_pool_1
+scoreboard players set pool_roll practice.temp 0
+function lavabuilder:load_rotation_0

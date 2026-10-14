@@ -28,5 +28,6 @@ execute as @e[type=player, scores={deaths=1..}] at @s run function practice:on_d
 execute as @a[predicate=practice:dropped_reset] at @s run function practice:on_dropped_item
 
 # 6. Fitur Bantuan: Lempar telur untuk reload lava pool
-execute as @a[scores={throw_egg=1..}] at @s run function lavabuilder:lava_pool_1
+execute as @a[scores={throw_egg=1..}] at @s run scoreboard players set pool_roll practice.temp 0
+execute as @a[scores={throw_egg=1..}] at @s run function lavabuilder:load_rotation_0
 execute as @a[scores={throw_egg=1..}] run scoreboard players reset @s throw_egg
