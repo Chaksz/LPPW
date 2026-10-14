@@ -1,5 +1,5 @@
 # Muat pool terpilih diputar 180 derajat.
-execute if score pool_roll practice.temp matches 0 run setblock ~-7 ~-4 ~1 minecraft:structure_block{mode:"LOAD",name:"lavabuilder:lava_pool_1",posX:0,posY:0,posZ:0,ignoreEntities:1b,rotation:"CLOCKWISE_180"} replace
+execute if score pool_roll practice.temp matches 0 run setblock ~-7 ~-4 ~1 minecraft:structure_block{mode:"LOAD",name:"lavabuilder:lava_pool_1",posX:0,posY:-2,posZ:0,ignoreEntities:1b,rotation:"CLOCKWISE_180"} replace
 execute if score pool_roll practice.temp matches 1 run setblock ~-7 ~-4 ~1 minecraft:structure_block{mode:"LOAD",name:"lavabuilder:lava_pool_2",posX:0,posY:-2,posZ:0,ignoreEntities:1b,rotation:"CLOCKWISE_180"} replace
 execute if score pool_roll practice.temp matches 2 run setblock ~-7 ~-4 ~1 minecraft:structure_block{mode:"LOAD",name:"lavabuilder:lava_pool_3",posX:0,posY:-2,posZ:0,ignoreEntities:1b,rotation:"CLOCKWISE_180"} replace
 execute if score pool_roll practice.temp matches 3 run setblock ~-7 ~-4 ~1 minecraft:structure_block{mode:"LOAD",name:"lavabuilder:lava_pool_4",posX:0,posY:-2,posZ:0,ignoreEntities:1b,rotation:"CLOCKWISE_180"} replace

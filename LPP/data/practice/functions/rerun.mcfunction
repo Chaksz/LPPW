@@ -1,5 +1,5 @@
 # rerun.mcfunction
 # Mengulang latihan secara instan (spread ke lava pool baru)
-title @a title {"text":"Restarting...","color":"yellow"}
+title @a subtitle {"text":"Restarting...","color":"yellow"}
 function practice:start
 

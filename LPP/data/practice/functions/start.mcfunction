@@ -16,8 +16,6 @@ effect clear @a
 effect give @a minecraft:instant_health 1 4 true
 execute as @a run function practice:ui/loadinv
 
-# 4. Lempar pemain ke koordinat acak Overworld (radius 100 s/d 100.000)
-spreadplayers 0 0 100 100000 false @a
-
-# 5. Validasi blok daratan tempat pemain mendarat
-execute as @a at @s run function practice:_start/validate_location
+# 4. Pilih alur sesuai mode yang dipilih pemain di hub
+execute as @a[scores={practice_mode=0}] at @s run function practice:_start/terrain
+execute as @a[scores={practice_mode=1}] at @s run function practice:_start/no_terrain

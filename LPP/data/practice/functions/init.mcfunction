@@ -2,6 +2,7 @@
 # Dijalankan otomatis oleh tag minecraft:load setiap kali datapack di-(re)load.
 
 scoreboard objectives add practice.temp dummy
+scoreboard objectives add practice_mode dummy
 scoreboard objectives add playerpos dummy
 scoreboard objectives add jumps minecraft.custom:minecraft.jump
 scoreboard objectives add deaths deathCount
@@ -31,6 +32,7 @@ scoreboard players set waiting_for_movement practice.temp 0
 
 # Pilihan skenario aktif (0 = lava_pool_1, 1 = lava_pool_2, 2 = lava_pool_3)
 execute unless score scenario practice.temp = scenario practice.temp run scoreboard players set scenario practice.temp 0
+execute as @a unless score @s practice_mode matches 0..1 run scoreboard players set @s practice_mode 0
 
 # Konstanta pembantu matematika
 scoreboard players set twelve practice.temp 12
