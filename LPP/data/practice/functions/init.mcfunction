@@ -4,6 +4,12 @@
 scoreboard objectives add practice.temp dummy
 scoreboard objectives add practice_mode dummy
 scoreboard objectives add playerpos dummy
+scoreboard objectives add terrain_attempt dummy
+scoreboard objectives add terrain_samples dummy
+scoreboard objectives add terrain_probe dummy
+scoreboard objectives add terrain_min dummy
+scoreboard objectives add terrain_max dummy
+scoreboard objectives add terrain_range dummy
 scoreboard objectives add jumps minecraft.custom:minecraft.jump
 scoreboard objectives add deaths deathCount
 scoreboard objectives add leave_game minecraft.custom:minecraft.leave_game

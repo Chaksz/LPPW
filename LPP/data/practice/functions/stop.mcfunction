@@ -1,6 +1,7 @@
 # 1. Hentikan semua antrean pencarian terrain & koordinat yang sedang berjalan
-schedule clear practice:_start/validate_location
+schedule clear practice:_start/requeue_validation
 schedule clear practice:_start/wait_for_marker
+tag @a remove awaiting_respread
 
 # 2. Reset skor deteksi agar tidak terjadi looping reset
 scoreboard players reset @a drop_lava
